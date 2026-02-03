@@ -47,11 +47,11 @@ export function Posters() {
       <Dropdown setSelectedSort={setSelectedSort}></Dropdown>
       <Grid gap={32} gtc={'1fr 4fr'}>
         <GenreSelect setSelectedGenre={setSelectedGenre} />
-
         <Grid gtc={'1fr 1fr 1fr'} gap={32}>
           {data?.map((item) => {
             return (
               <Poster
+              slug={item.slug}
                 key={item.id}
                 price={item.price}
                 imageUrl={item.image}

@@ -1,6 +1,8 @@
+@use '../../style/globals' as globals;
+
 .scrollBar{
     height: 10px;
-    background-color: $color_dark_beige;
+    background-color: globals.$color_dark_beige;
     position: fixed;
     top: 0;
     left: 0;
