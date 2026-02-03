@@ -1,0 +1,9 @@
+@use '../../style/globals' as globals;
+
+.btn{
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: globals.$color_beige;
+    text-decoration: none;
+    color: black;
+}

@@ -6,6 +6,7 @@ import type { MovieData } from '../../types/movieType'
 import { GenreSelect } from '../../components/GenreSelect/GenreSelect'
 import { Title } from '../../components/Title/Title'
 import { Dropdown } from '../../components/Dropdown/Dropdown'
+import style from './posters.module.scss'
 
 export function Posters() {
   const [selectedGenre, setSelectedGenre] = useState<string>('komedie')
@@ -43,8 +44,10 @@ export function Posters() {
 
   return (
     <>
+    <div className={style.ko}>
       <Title text='Posters'></Title>
       <Dropdown setSelectedSort={setSelectedSort}></Dropdown>
+      </div>
       <Grid gap={32} gtc={'1fr 4fr'}>
         <GenreSelect setSelectedGenre={setSelectedGenre} />
         <Grid gtc={'1fr 1fr 1fr'} gap={32}>

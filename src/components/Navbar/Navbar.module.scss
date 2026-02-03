@@ -17,11 +17,13 @@
     font-weight: 800;
     padding-left: 8px;
   }
+
   ul {
     margin: 16px;
     display: flex;
     flex-direction: row;
     gap: 1.3rem;
+
     li {
       list-style-type: none;
       justify-items: end;
@@ -32,6 +34,10 @@
         font-size: 1.3rem;
         color: black;
       }
+
+a:hover{
+  color: globals.$color_light_brown;
+}
     }
   }
 }

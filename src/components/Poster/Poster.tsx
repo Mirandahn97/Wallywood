@@ -2,6 +2,7 @@ import { NavLink } from 'react-router'
 import type { Genre } from '../../types/movieType'
 import style from './Poster.module.scss'
 import parse from 'html-react-parser'
+import { Button } from '../Button/Button' 
 
 interface PosterProps {
   id: number
@@ -27,7 +28,11 @@ export function Poster({ id, imageUrl, title, description, genres, price, slug }
           })}
         {price && <p>Price: {price}</p>}
         {/*Her sætter vi variablen 'slug' på details routen, så vi kan trække den ud, inde i details siden*/}
-{slug && <NavLink to={`/degails/${slug}`}>Læs mere</NavLink>}
+{slug && (
+  <Button as={NavLink} to={`/details/${slug}`}>
+    Læs mere
+  </Button>
+)}
       </div>
     </div>
   )

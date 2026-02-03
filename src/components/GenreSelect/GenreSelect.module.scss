@@ -1,5 +1,12 @@
+@use '../../style/globals' as globals;
 .genreStyle {
+
     li{
         list-style-type: none;
+        color: globals.$color_light_brown;
+        cursor: pointer;
+    }
+    li:hover{
+        color: globals.$color_bg_brown;
     }
 }

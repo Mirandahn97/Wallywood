@@ -2,10 +2,14 @@
 
 .footerStyle {
     border-top: solid 2px globals.$color_beige;
-    margin-top: auto;
+    margin-top: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 32px;
+
+    h3{
+       color: globals.$color_light_brown; 
+    }
 
     section {
         display: flex;
@@ -27,4 +31,11 @@
         font-weight: 200;
         font-size: 1rem;
     }
+
+    .socials{
+     display: block;
+     width: 10%;
+     height: 20%;
+    }
 }
+
